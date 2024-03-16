@@ -39,6 +39,7 @@ dependencies {
     implementation("io.jsonwebtoken:jjwt-jackson:0.12.3")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.flywaydb:flyway-core")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
     testImplementation("org.springframework.security:spring-security-test")
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
