@@ -10,7 +10,5 @@ import org.springframework.core.convert.converter.Converter
 @Mapper(config = MapperConfiguration::class)
 interface EventDTOToEvent : Converter<EventDTO, Event> {
     @Mapping(target = "id", ignore = true)
-    @Mapping(target = "createdAt", ignore = true)
-    @Mapping(target = "updatedAt", ignore = true)
     override fun convert(source: EventDTO): Event
 }

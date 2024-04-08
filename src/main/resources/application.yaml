@@ -15,6 +15,10 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          key: 357638792F423F4528482B4D6251655468576D5A7133743677397A2443264629
-          access-token-expiration: 3600000
-          refresh-token-expiration: 86400000
+          jwk-set-uri: http://localhost:8080/oauth2/keys
+          issuer-uri: http://localhost:8080/oauth2/token
+jwt:
+  # TODO: REPLACE WITH YOUR OWN SECRET KEY
+  key: 357638792F423F4528482B4D6251655468576D5A7133743677397A2443264629
+  access-token-expiration: 3600000
+  refresh-token-expiration: 86400000

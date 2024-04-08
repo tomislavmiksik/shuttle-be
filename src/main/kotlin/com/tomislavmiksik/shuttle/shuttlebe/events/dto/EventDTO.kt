@@ -1,6 +1,6 @@
 package com.tomislavmiksik.shuttle.shuttlebe.events.dto
 
-import com.tomislavmiksik.shuttle.shuttlebe.user.entity.User
+import com.tomislavmiksik.shuttle.shuttlebe.user.dto.UserDTO
 import lombok.AllArgsConstructor
 import lombok.Builder
 import lombok.Data
@@ -15,7 +15,7 @@ class EventDTO(
     var id: String,
     var name: String,
     var date: Date,
-    var owner: User,
+    var owner: UserDTO,
     var createdAt: Date,
     var updatedAt: Date,
 )

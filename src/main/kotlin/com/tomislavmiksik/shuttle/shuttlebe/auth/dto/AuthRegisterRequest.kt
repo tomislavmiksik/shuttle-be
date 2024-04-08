@@ -1,18 +1,18 @@
-package com.tomislavmiksik.shuttle.shuttlebe.user.dto
+package com.tomislavmiksik.shuttle.shuttlebe.auth.dto
 
+import com.tomislavmiksik.shuttle.shuttlebe.user.dto.UserDTO
 import com.tomislavmiksik.shuttle.shuttlebe.user.entity.Role
-import com.tomislavmiksik.shuttle.shuttlebe.user.entity.User
 import java.util.*
 
-data class UserRegisterRequest(
+data class AuthRegisterRequest(
     val username: String,
     val email: String,
     val password: String,
     val firstName: String,
     val lastName: String,
 ) {
-    fun toUserFromRegisterRequest(): User {
-        return User(
+    fun toUserFromRegisterRequest(): UserDTO {
+        return UserDTO(
             id = UUID.randomUUID(),
             username = username,
             email = email,

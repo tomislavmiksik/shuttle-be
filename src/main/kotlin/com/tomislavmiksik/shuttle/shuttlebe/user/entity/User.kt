@@ -1,6 +1,5 @@
 package com.tomislavmiksik.shuttle.shuttlebe.user.entity
 
-import com.tomislavmiksik.shuttle.shuttlebe.user.dto.UserResponse
 import jakarta.persistence.*
 import lombok.Builder
 import lombok.Data
@@ -21,18 +20,7 @@ class User(
     var token: String,
     var username: String,
     var role: Role,
-) {
-    fun toUserResponse(): UserResponse {
-        return UserResponse(
-            id = id.toString(),
-            username = username,
-            email = email,
-            firstName = firstName,
-            lastName = lastName,
-            token = token,
-        )
-    }
-}
+)
 
 enum class Role {
     ADMIN,
