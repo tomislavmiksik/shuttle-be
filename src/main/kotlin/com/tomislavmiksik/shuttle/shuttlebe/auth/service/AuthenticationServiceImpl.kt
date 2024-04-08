@@ -4,10 +4,10 @@ import com.tomislavmiksik.shuttle.shuttlebe.auth.dto.AuthLoginRequest
 import com.tomislavmiksik.shuttle.shuttlebe.auth.dto.AuthRegisterRequest
 import com.tomislavmiksik.shuttle.shuttlebe.auth.dto.AuthResponse
 import com.tomislavmiksik.shuttle.shuttlebe.common.config.JwtProperties
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.EmailTakenException
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.UsernameTakenException
 import com.tomislavmiksik.shuttle.shuttlebe.common.service.CustomUserDetailsService
 import com.tomislavmiksik.shuttle.shuttlebe.common.service.TokenService
-import com.tomislavmiksik.shuttle.shuttlebe.exception.EmailTakenException
-import com.tomislavmiksik.shuttle.shuttlebe.exception.UsernameTakenException
 import com.tomislavmiksik.shuttle.shuttlebe.user.dto.UserDTO
 import com.tomislavmiksik.shuttle.shuttlebe.user.entity.Role
 import com.tomislavmiksik.shuttle.shuttlebe.user.mapper.UserDTOToUser

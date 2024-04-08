@@ -1,9 +1,9 @@
 package com.tomislavmiksik.shuttle.shuttlebe.common.controller
 
-import com.tomislavmiksik.shuttle.shuttlebe.exception.EmailTakenException
-import com.tomislavmiksik.shuttle.shuttlebe.exception.IncorrectCredentialsException
-import com.tomislavmiksik.shuttle.shuttlebe.exception.NotFoundException
-import com.tomislavmiksik.shuttle.shuttlebe.exception.UsernameTakenException
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.EmailTakenException
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.IncorrectCredentialsException
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.NotFoundException
+import com.tomislavmiksik.shuttle.shuttlebe.common.exception.UsernameTakenException
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
