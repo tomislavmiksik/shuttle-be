@@ -31,6 +31,9 @@ class WebSecurityConfig(private val authProvider: AuthenticationProvider) {
             sessionManagement {
                 sessionCreationPolicy = SessionCreationPolicy.STATELESS
             }
+            oauth2Client {
+                
+            }
             authProvider
             addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter::class.java)
         }
