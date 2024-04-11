@@ -44,4 +44,4 @@ private.pem
 public.pem
 
 
-resources/application.yaml
+src/main/resources/application.yaml
