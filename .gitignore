@@ -42,3 +42,6 @@ out/
 
 private.pem
 public.pem
+
+
+resources/application.yaml
